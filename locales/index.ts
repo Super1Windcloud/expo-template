@@ -29,14 +29,15 @@ const getInitialLanguage = (): SupportedLanguage => {
   try {
     const locales = Localization.getLocales()
     if (Array.isArray(locales) && locales.length > 0) {
-      return normalizeLanguageCode(locales[0]?.languageCode)
+      const primary = locales[0]
+      return normalizeLanguageCode(primary?.languageCode ?? primary?.languageTag)
     }
   } catch (error) {
     // Accessing expo-localization during SSR on web can throw.
     console.warn('Unable to detect locales via expo-localization:', error)
   }
 
-  return normalizeLanguageCode(Localization.locale)
+  return FALLBACK_LANGUAGE
 }
 
 if (!i18next.isInitialized) {
