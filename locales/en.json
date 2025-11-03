@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Home",
+    "showDetails": "Show Details"
+  },
+  "details": {
+    "title": "Details",
+    "description": "Showing details for user {{name}}",
+    "unknownUser": "someone"
+  },
+  "notFound": {
+    "title": "Oops!",
+    "message": "This screen doesn't exist.",
+    "cta": "Go to home screen!"
+  },
+  "editScreenInfo": {
+    "title": "Open up the code for this screen:",
+    "description": "Change any of the text, save the file, and your app will automatically update."
+  }
+}

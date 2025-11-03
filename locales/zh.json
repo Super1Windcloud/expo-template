@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "首页",
+    "showDetails": "查看详情"
+  },
+  "details": {
+    "title": "详情",
+    "description": "显示用户 {{name}} 的详情",
+    "unknownUser": "某人"
+  },
+  "notFound": {
+    "title": "哎呀！",
+    "message": "此页面不存在。",
+    "cta": "返回首页"
+  },
+  "editScreenInfo": {
+    "title": "打开此页面的代码：",
+    "description": "修改任意文本并保存，应用会自动更新。"
+  }
+}
